@@ -1,0 +1,292 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+}
+
+*::selection{
+    background-color: rgb(254, 74, 104);
+    color: white;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 4rem;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: rgb(45, 45, 116);
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10000;
+    background-color: rgb(254, 74, 104);
+    padding: 2rem 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section {
+    padding: 10rem 5%; 
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    border: .2rem solid black;
+    color: black;
+    font-size: 2rem;
+    padding: 1rem 5rem;
+    cursor: pointer;
+    background: none;
+}
+
+.btn:hover {
+    background: rgb(254, 74, 104);
+    border-color: rgb(254, 74, 104);
+    color: white;
+
+}
+
+.heading{
+    padding-bottom: 0;
+    text-align: center;
+}
+
+.heading h1 {
+    font-size: 4rem;
+    color: white;
+    padding-bottom: 0;
+}
+
+header .logo {
+    font-size: 2rem;
+    color: white;
+    font-weight: bolder;
+}
+
+
+header .navbar a {
+    color: white;
+    font-weight: 2rem;
+    margin-left: 2rem;
+
+
+}
+
+header .navbar a:hover {
+    color: rgba(45, 45, 116);
+}
+
+i { 
+    font-size: 4rem;
+    color: white;
+    border-radius: .5rem;
+    border: .1rem solid white;
+    padding: .5rem 1.5rem;
+    cursor: pointer;
+    display: none;
+
+}
+
+.home {
+    min-height: 100vh;
+    display: flex;
+    align-content: center;
+    background: url(../img/home-bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.home .content span {
+    font-size: 3rem;
+    color: rgb(254, 74, 104);
+
+}
+.home .content h3 {
+    font-size: 6rem;
+    color: black;
+    width: 60rem;
+}
+
+
+.step-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.step-container .step {
+    background-color: white;
+    margin: 1rem;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.9);
+    text-align: center;
+    flex: 1 1 30rem;
+
+}
+
+.step-container .step span {
+    font-size: 7rem;
+    color: rgb(254, 74, 104);
+    font-weight: bolder;
+}
+
+.step-container .step h3{
+    font-size: 3rem;
+    color: rgb(45, 45, 116);
+}
+
+.step-container .step p{
+    font-size: 1.5rem;
+    color: #666;
+    padding: 1rem 0; 
+
+}
+
+
+.vendor .box-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.vendor .box-container .box {
+    flex: 1 1 30rem;
+    margin: 1rem; 
+    overflow: hidden;
+    position: relative;
+    border-radius: .5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.9);
+    height: 25rem;
+}
+
+.vendor .box-container .box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.vendor .box-container .box .info{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.7);
+    text-align: center;
+    transform: scale(1.5);
+    opacity: 0;
+    cursor: pointer;
+}
+
+.vendor .box-container .box:hover .info {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.vendor .box-container .box:hover img {
+    transform: scale(1.5)
+
+}
+
+.vendor .box-container .box .info h3{
+    font-size: 3rem;
+    color: rgba(45, 45, 116);
+}
+
+.vendor .box-container .box .info p{
+    font-size: 1.5rem;
+    color: #333; 
+    padding: 1rem 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:1200px) {
+
+    html {
+        font-size: 55%;
+
+    }
+}
+    
+    
+@media (max-width:991px) {
+    header {
+            padding: 2rem 4%;
+    }
+
+}
+
+@media (max-width:786px) {
+    i {
+        display: block;
+    }
+    
+    header .navbar {
+        position: absolute;
+        top:100%;
+        left:0;
+        right:0;
+        background-color: black;
+        padding: 2rem 0;
+    }
+
+    header .navbar a {
+        display: block;
+        background-color: white;
+        border-radius: .5rem;
+        color: white;
+        margin: 1.5rem 0;
+        padding: 1rem 2rem;
+        font-size: 2.5rem;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        
+
+
+    }
+
+    
+}
+
+
+@media (max-width:450px) {
+
+    html {
+        font-size: 50%;
+
+    }
+}
