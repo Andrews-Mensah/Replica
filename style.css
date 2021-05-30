@@ -94,7 +94,7 @@ i {
     border: .1rem solid white;
     padding: .5rem 1.5rem;
     cursor: pointer;
-    display: none;
+    display: flex;
 
 }
 
@@ -134,7 +134,7 @@ i {
     border-radius: 0.5rem;
     box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.9);
     text-align: center;
-    flex: 1 1 30rem;
+    flex: 30rem;
 
 }
 
@@ -162,6 +162,8 @@ i {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    width: 90%;
+   padding-left: 12rem; 
 
 }
 
@@ -253,7 +255,7 @@ i {
 
 @media (max-width:786px) {
     i {
-        display: block;
+        display: flexbox;
     }
     
     header .navbar {
